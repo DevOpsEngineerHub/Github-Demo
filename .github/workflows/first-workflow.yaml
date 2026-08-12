@@ -1,7 +1,7 @@
 name: This is the First Github Actions Script. 
 
 on: 
-  workflow_dispatch
+  push: 
 
 jobs: 
   hello-world:
@@ -9,3 +9,6 @@ jobs:
     steps: 
       - name: This will execute the Script
         run: echo "Welcome to the Github Actions!!!!!"
+        
+      - name: this is step 02
+        run: echo "This is triggered by the push!!!!!"
