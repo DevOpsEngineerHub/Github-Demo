@@ -1,1 +1,11 @@
+name: This is the First Github Actions Script. 
 
+on: 
+  workflow_dispatch
+
+jobs: 
+  hello-world:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: This will execute the Script
+        run: echo "Welcome to the Github Actions!!!!!"
