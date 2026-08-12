@@ -8,11 +8,20 @@ on:
     
 
 jobs: 
-  hello-world:
+  demo:
     runs-on: ubuntu-latest
     steps: 
       - name: This will execute the Script
         run: echo "Welcome to the Github Actions!!!!!"
         
-      - name: this is step 02
-        run: echo "This is triggered by the push on main branch!!!!!"
+      - name: Show current working directory
+        run: pwd
+
+      - name: List the directory
+        run: ls -l
+
+      - name: Create a sample file
+        run: echo "Hello Gihtub Actions" > sample.txt 
+
+      - name: Display the file content 
+        run: cat sample.txt
