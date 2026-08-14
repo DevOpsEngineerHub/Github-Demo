@@ -15,7 +15,7 @@ jobs:
       - name: Display the Application Name
         run: |
           echo "$APP_NAME"
-          echo "$ENVIORNMENT"
+          echo "$ENVIRONMENT"
           echo "$VERSION"
 
       - name: Build App
