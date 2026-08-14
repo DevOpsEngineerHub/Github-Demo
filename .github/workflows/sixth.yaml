@@ -1,0 +1,14 @@
+name: CI
+
+on:
+  workflow_dispatch: 
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Show info
+        run: |
+          echo "Triggered by: ${{ github.actor }}"
+          echo "Branch: ${{ github.ref }}"
+          echo "OS: ${{ runner.os }}"
