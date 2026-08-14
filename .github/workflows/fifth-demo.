@@ -1,0 +1,15 @@
+name: Variable Demo
+
+on:
+  push:
+
+env: 
+  APP_NAME: MyApplication 
+
+jobs: 
+  job-01: 
+    runs-on: ubuntu-latest
+    steps:
+      - name: Display the Application Name
+        run: echo "Application: $APP_NAME"
+     
