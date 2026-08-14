@@ -7,8 +7,6 @@ jobs:
   job-01: 
     runs-on: ubuntu-latest
     steps:
-      - name: Repo Information
-        run: echo "${{github.repository}}
       - name: Branch Information 
         run: echo "${{github.ref}}"
       - name: OS 
