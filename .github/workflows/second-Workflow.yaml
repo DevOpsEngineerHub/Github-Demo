@@ -10,5 +10,14 @@ jobs:
       - name: Checkout the Repo
         uses: actions/checkout@v4 
         
-      - name: List out the Repo
+      - name: Show the current Directory
+        run: pwd
+
+      - name: List Dir
         run: ls -la
+
+      - name: Show Date
+        run: date
+
+      - name: Welcome Message007
+        run: echo "Learning Github Actions Day -03"
