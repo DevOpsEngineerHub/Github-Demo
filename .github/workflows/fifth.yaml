@@ -1,0 +1,23 @@
+name: Application Variables
+
+on:
+  workflow_dispatch:
+
+env:
+  APP_NAME: StudentApp
+  ENVIRONMENT: DEV
+  VERSION: 1.0
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Application Information
+        run: |
+          echo "Application: $APP_NAME"
+          echo "Environment: $ENVIRONMENT"
+          echo "Version: $VERSION"
+
+      - name: Build Application
+        run: echo "Building $APP_NAME version $VERSION"
