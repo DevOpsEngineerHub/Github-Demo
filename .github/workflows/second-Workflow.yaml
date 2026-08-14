@@ -1,0 +1,14 @@
+name: Checkout Demo
+
+on: 
+  workflow_dispatch: 
+
+jobs: 
+  demo: 
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the Repo
+        uses: actions/checkout@v4 
+        
+      - name: List out the Repo
+        run: ls -la
