@@ -4,12 +4,19 @@ on:
   push:
 
 env: 
-  APP_NAME: MyApplication 
+  APP_NAME: MyApplication
+  ENVIRONMENT: DEV
+  VERSION: 1.0
 
 jobs: 
   job-01: 
     runs-on: ubuntu-latest
     steps:
       - name: Display the Application Name
-        run: echo "$APP_NAME"
-     
+        run: |
+          echo "$APP_NAME"
+          echo "$ENVIORNMENT"
+          echo "$VERSION"
+
+      - name: Build App
+        run: echo "Build $APP_NAME version $VERSION"
