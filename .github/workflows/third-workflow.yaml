@@ -1,0 +1,25 @@
+name: Day 03 Actions Demo
+
+on:
+  workflow_dispatch:
+
+jobs:
+  demo:
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Show Current Directory
+        run: pwd
+
+      - name: List Repository Files
+        run: ls -la
+
+      - name: Show Date
+        run: date
+
+      - name: Show Welcome Message
+        run: echo "Learning GitHub Actions Day 03"
